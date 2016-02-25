@@ -1,0 +1,139 @@
+﻿1、注册码：
+----- BEGIN LICENSE -----
+
+Andrew Weber
+
+Single User License
+
+EA7E-855605
+
+813A03DD 5E4AD9E6 6C0EEB94 BC99798F
+
+942194A6 02396E98 E62C9979 4BB979FE
+
+91424C9D A45400BF F6747D88 2FB88078
+
+90F5CC94 1CDC92DC 8457107A F151657B
+
+1D22E383 A997F016 42397640 33F41CFC
+
+E1D0AE85 A0BBD039 0E9C8D55 E1B89D5D
+
+5CDB7036 E56DE1C0 EFCC0840 650CD3A6
+
+B98FC99C 8FAC73EE D2B95564 DF450523
+
+------ END LICENSE ------
+2、安装包管理：
+import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')
+3、用户字体类型和大小等设置
+4、安装推荐插件：colorpicker、htmlBeautify、css Format、sublimeCodeIntel、emmet、view in browser(按键绑定{ "keys": ["ctrl+shift+enter"], "command": "open_in_browser" })、jQuery、javascript Completions、CSS completions、HTML5、SCSS、Autoprefix CSS apicloud官方插件包(http://www.apicloud.com/dev)、numix主题(
+	配置settings-user增加如下：
+	"numix_sidebar_tree_large": true,
+	"numix_sidebar_tree_medium": true,
+	"numix_sidebar_tree_small": true,
+	"numix_sidebar_tree_xlarge": true,
+	"numix_sidebar_tree_xsmall": true,
+	"numix_small_tabs": true,
+	"numix_xsmall_tabs": true,
+	"theme": "Numix.sublime-theme"
+)、Brogrammar主题、BracketHighlighter(高亮代码块配置方法：http://www.tuicool.com/articles/reQJBj 和 http://www.tuicool.com/articles/EV3eEzA)。
+ps:我的配置文件{
+	<!-- 高亮配色文件 -->
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Default</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.default</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#666</string>
+	    <key>background</key>
+	    <string>#f00</string>
+	  </dict>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Unmatched</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.unmatched</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#FFFFFF</string>
+	    <key>background</key>
+	    <string>#FF0000</string>
+	  </dict>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Curly</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.curly</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#FF00FF</string>
+	  </dict>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Round</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.round</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#E7FF04</string>
+	  </dict>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Square</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.square</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#f00</string>
+	  </dict>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Angle</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.angle</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#000</string>
+	  </dict>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Tag</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.tag</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#FFFFFF</string>
+	    <key>background</key>
+	    <string>#0080FF</string>
+	  </dict>
+	</dict>
+	<dict>
+	  <key>name</key>
+	  <string>Bracket Quote</string>
+	  <key>scope</key>
+	  <string>brackethighlighter.quote</string>
+	  <key>settings</key>
+	  <dict>
+	    <key>foreground</key>
+	    <string>#56FF00</string>
+	  </dict>
+	</dict>
+	    <!-- 高亮配色文件结束 -->
+
+	    														--- powered by rexhang 2014.12.02
